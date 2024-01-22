@@ -16,8 +16,9 @@ Este projeto é um Sistema Simples de Gerenciamento de Funcionários que permite
 1. Clone o repositório em sua máquina local.
 2. Instale as dependências necessárias utilizando 'npm install'.
 3. Configure o banco de dados PostgreSQL e atualize os detalhes de conexão no arquivo 'config.js'.
-4. Inicie o servidor utilizando 'npm start'.
-5. Abra o aplicativo em seu navegador da web.
+4. Acesse a pasta `server/` utilizando 'cd server'
+5. Inicie o servidor utilizando 'node server.js'.
+6. Abra o aplicativo em seu navegador da web.
 
 ## Dependências
 
