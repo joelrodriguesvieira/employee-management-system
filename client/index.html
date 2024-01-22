@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="src/styles/styles.css">
+
+    <title>Home Page</title>
+</head>
+<body>
+    <main>
+        <section class="container">
+            <button id="create-main" class="button-change">Register employee</button>
+            <button id="view-main" class="button-change">View employees</button>
+            <button id="update-main" class="button-change">Update employee</button>
+            <button id="delete-main" class="button-change">Delete employee</button>
+        </section>
+    
+        <section class="register-box">
+            <form id="form-new-employee">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="job">Function:</label>
+                <input type="text" id="job" name="job" required>
+                <label for="cpf">CPF:</label>
+                <input type="text" name="cpf" id="cpf" placeholder="12345678900" required>
+                <input type="submit" value="Register" id="btn-register">
+            </form>            
+        </section>
+
+        <section class="sucess-register">
+            <p>Employee successfully registered!</p>
+            <button id="close-sucessBtn">x</button>
+        </section>
+
+        <table class="view-box"></table>
+
+        <section class="update-box">
+            <form id="search-form-employee-id">
+                <label for="employee-id-update">Writte the ID: </label>
+                <input type="number" id="employee-id-update" placeholder="Enter ID to update">
+                <input type="submit" value="Search" id="search-employee-update">
+            </form>
+        </section>
+
+        <section class="result-update-box"></section>
+
+        <section class="delete-box">
+            <form id="search-form-delete-employee">
+                <label for="employee-id-delete">Writte the ID: </label>
+                <input type="number" id="employee-id-delete" placeholder="Enter ID to delete">
+                <input type="submit" value="Search" id="search-employee-delete">
+            </form>
+        </section>
+
+        <section class="result-delete-box"></section>
+    </main>
+    <script type="module" src="src/scripts/main.js"></script>
+    <script type="module" src="src/scripts/controllers/register.js"></script>
+    <script type="module" src="src/scripts/controllers/view.js"></script>
+    <script type="module" src="src/scripts/controllers/search.js"></script>
+    <script type="module" src="src/scripts/controllers/update.js"></script>
+    <script type="module" src="src/scripts/controllers/delete.js"></script>
+</body>
+</html>

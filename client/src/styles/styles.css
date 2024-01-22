@@ -1,0 +1,203 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    margin: 0;
+}
+
+main {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: gray;
+    width: 60%;
+    height: 100vh;
+}
+
+
+button {
+    display: inline-block;
+    gap: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    color: #333;
+    background-color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.container {
+    margin-bottom: 25px;
+}
+
+.register-box {
+    width: 400px;
+    height: 350px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: none;
+}
+
+.register-box form,
+.result-update-box form,
+.result-delete-box form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.register-box label,
+.update-box label,
+.result-update-box label,
+.delete-box label,
+.result-delete-box label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.register-box input,
+.update-box input,
+.result-update-box input,
+.delete-box input,
+.result-delete-box input {
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.register-box input[type="submit"],
+.update-box input[type="submit"],
+.result-update-box input[type="submit"],
+.delete-box input[type="submit"]{
+    background-color : #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.register-box input[type="submit"]:hover,
+.update-box input[type="submit"]:hover,
+.result-update-box input[type="submit"]:hover,
+.delete-box input[type="submit"]:hover {
+    background-color: #555;
+}
+
+.result-delete-box input[type='submit'] {
+    background-color: red;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.result-delete-box input[type='submit']:hover {
+    background-color: rgb(90, 0, 0);
+}
+
+.view-box {
+    display: none;
+}
+ 
+
+table {
+    margin: 20px 10px;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+
+th {
+    background-color: #f2f2f2;
+}
+
+.update-box,
+.delete-box {
+    display: none;
+    width: 400px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.sucess-register {
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+    width: 350px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.sucess-register p {
+    font-weight: 700;
+    color: #008000;
+}
+
+.sucess-register button {
+    padding: 6px;
+    background-color: #ff0000;
+    color: #fff;
+}
+
+.result-update-box,
+.result-delete-box {
+    display: none;
+    width: 400px;
+    height: 350px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.negative-result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.negative-result span {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;;
+}
+
+.negative-result button {
+    background-color : #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+.negative-result button:hover {
+    background-color: #646464;
+}
